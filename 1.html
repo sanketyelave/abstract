@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>clone</title>
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   #top {
+
+      background-color: black;
+      color: aliceblue;
+      padding: 20px;
+      padding-bottom: 21px;
+      font-size: 25px;
+
+   }
+
+   strong {
+      position: absolute;
+      left: 100px;
+      top: 21px;
+      font-family: sans-serif;
+
+   }
+
+   .help {
+      position: absolute;
+      left: 280px;
+      top: 25.7px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+   }
+
+   strong:hover {
+      cursor: pointer;
+      color: rgb(205, 203, 203);
+
+   }
+
+   .help:hover {
+      cursor: pointer;
+      text-decoration: underline;
+   }
+
+   b {
+      position: absolute;
+      left: 255px;
+      top: 25px;
+   }
+
+   button {
+      padding: 10px 22px 10px 22px;
+      border-radius: 8px;
+      font-size: 20px;
+      position: relative;
+      left: 65%;
+      margin-left: 20px;
+      display: inline;
+   }
+
+   .b1 {
+      background-color: black;
+      color: white;
+      border-color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      cursor: pointer;
+   }
+
+   .b2 {
+      background-color: rgb(119, 119, 233);
+      color: white;
+      border-color: rgb(119, 119, 233);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      cursor: pointer;
+      position: absolute;
+      top: 3.1%;
+      left: 82%;
+
+   }
+
+   .b2:hover {
+      background-color: aliceblue;
+      color: black;
+      border-color: aliceblue;
+   }
+
+   .para {
+      font-size: 70px;
+      position: absolute;
+      top: 35%;
+      left: 30%;
+      font-family: sans-serif;
+   }
+
+   .p1 {
+      background-color: #DADBF1;
+      padding: 100px 100px 280px 100px;
+   }
+
+   .search {
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      padding: 15px 450px 15px 30px;
+      font-size: 20px;
+   }
+
+   .d1 {
+      font-size: 20px;
+      display: inline;
+      position: absolute;
+      left: 20%;
+      top: 110%;
+   }
+
+   .d2 {
+      font-size: 20px;
+      display: inline;
+      position: absolute;
+      left: 60%;
+      top: 110%;
+   }
+
+   .d3 {
+      font-size: 20px;
+      display: inline;
+      position: absolute;
+      left: 20%;
+      top: 150%;
+   }
+
+   .d4 {
+      font-size: 20px;
+      display: inline;
+      position: absolute;
+      left: 60%;
+      top: 150%;
+   }
+
+   .d5 {
+      font-size: 20px;
+      display: inline;
+      position: absolute;
+      left: 20%;
+      top: 200%;
+   }
+
+   .d6 {
+      font-size: 20px;
+      display: inline;
+      position: absolute;
+      left: 60%;
+      top: 200%;
+   }
+
+   a {
+      text-decoration: none;
+   }
+
+   a:hover {
+      text-decoration: underline;
+   }
+
+   .ar {
+      color: black;
+      position: absolute;
+      left: 69%;
+      top: 49%;
+   }
+
+   .ar:hover {
+      color: blue;
+   }
+
+   .i1,
+   .i2,
+   .i3,
+   .i4,
+   .i5,
+   .i6 {
+      height: 100px;
+   }
+
+   .i1 {
+      position: absolute;
+      top: 110%;
+      left: 10%;
+   }
+
+   .i2 {
+      position: absolute;
+      top: 110%;
+      left: 50%;
+   }
+
+   .i3 {
+      position: absolute;
+      top: 150%;
+      left: 10%;
+   }
+
+   .i4 {
+      position: absolute;
+      top: 150%;
+      left: 50%;
+   }
+
+   .i5 {
+      position: absolute;
+      top: 200%;
+      left: 10%;
+   }
+
+   .i6 {
+      position: absolute;
+      top: 200%;
+      left: 50%;
+   }
+
+   .ab {
+      position: absolute;
+      top: 250%;
+      left: 8%;
+   }
+
+   .ad {
+      position: absolute;
+      top: 250%;
+      left: 20%;
+   }
+
+   .ac {
+      position: absolute;
+      top: 250%;
+      left: 32%;
+   }
+
+   .acc {
+      position: absolute;
+      top: 250%;
+      left: 44%;
+   }
+
+   .ae {
+      position: absolute;
+      top: 274%;
+      left: 44%;
+   }
+
+   #bottom {
+      font-size: 20px;
+      font-family: sans-serif;
+      color: white;
+      background-color: black;
+      margin-top: 930px;
+      padding-bottom: 340px;
+   }
+
+   ul {
+      color: white;
+   }
+
+   li:hover {
+      cursor: pointer;
+      text-decoration: underline;
+   }
+
+   .last {
+      position: absolute;
+      top: 276%;
+      left: 75%;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+   }
+</style>
+
+<body>
+   <div id="top">
+      <strong> &#9925; Abstract </strong>
+      <p class="help"> Help Center</p>
+      <b>|</b>
+      <form action="https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support">
+         <button class="b1">Submit a request</button>
+      </form>
+      <form
+         action="https://goabstract.zendesk.com/auth/v2/login/signin?return_to=https%3A%2F%2Fhelp.abstract.com%2Fhc%2Fen-us%2Farticles%2F360050382291-Contact-Support&theme=hc&locale=en-us&brand_id=360000024632&auth_origin=360000024632%2Ctrue%2Ctrue">
+         <button class="b2">Sign in</button>
+   </div>
+   </form>
+   <div class="p1">
+      <p class="para"> How can we help ? </p>
+      <input type="text" placeholder="Search" class="search">
+   </div>
+   <div id="content">
+      <div class="d1">
+         <h4>Using Abstract</h4> <br>
+         <p>Abstract lets you manage, <br> version, and document your <br> designs in one place.</p> <br>
+         <a href="https://help.abstract.com/hc/en-us/categories/360005436592-Authenticate-to-Abstract">Learn More
+            &rarr;</a>
+
+      </div>
+      <div class="d2">
+         <h4>Manage your account</h4> <br>
+         <p>Configure your account settings,<br> such as your email, profile <br> details, and password.</p> <br>
+         <a href="https://help.abstract.com/hc/en-us/categories/360005449431-Manage-your-account">Learn More &rarr;</a>
+      </div>
+      <div class="d3">
+         <h4> Manage organizations, teams,<br> and projects</h4> <br>
+         <p>Use Abstract organizations, <br> teams, and projects to organize <br> your people and your work.</p> <br>
+         <a href="https://help.abstract.com/hc/en-us/categories/360005449531-Manage-organizations-teams-and-projects">Learn
+            More &rarr;</a>
+      </div>
+      <div class="d4">
+         <h4>Manage billing</h4> <br>
+         <p>Change subscriptions and <br> payment details.</p> <br>
+         <a href="https://help.abstract.com/hc/en-us/categories/360005436672-Manage-billing">Learn More &rarr;</a>
+      </div>
+      <div class="d5">
+         <h4>Authenticate to Abstract</h4> <br>
+         <p>Set up and configure SSO,<br> SCIM, and Just-in-Time <br> provisioning.</p><br>
+         <a href="https://help.abstract.com/hc/en-us/categories/360005449531-Manage-organizations-teams-and-projects">Learn
+            More &rarr;</a>
+      </div>
+      <div class="d6">
+         <h4>Abstract support</h4><br>
+         <p>Get in touch with a human.</p><br>
+         <a href="https://help.abstract.com/hc/en-us/categories/360005436672-Manage-billing">Learn More &rarr;</a>
+      </div>
+      <a href="https://google.com" class="ar"> <strong>&rarr;</strong></a>
+   </div>
+   <div id="image">
+      <img src="i1.png" class="i1">
+      <img src="i2.png" class="i2">
+      <img src="i3.png" class="i5">
+      <img src="i4.png" class="i3">
+      <img src="i5.png" class="i4">
+      <img src="i6.png" class="i6">
+   </div>
+   <div id="bottom">
+      <div class="ab">
+         <h4>Abstract</h4> <br>
+         <ul type="none">
+            <li>Start Trial</li>
+            <li>Pricing</li>
+            <li>Download</li>
+         </ul>
+      </div>
+      <div class="ad">
+         <h4>Resources</h4><br>
+         <ul type="none">
+            <li>Blog</li>
+            <li>Help Center</li>
+            <li>Release Notes</li>
+            <li>Status</li>
+         </ul>
+      </div>
+      <div class="ac">
+         <h4>Community</h4> <br>
+         <ul type="none">
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>Dribble</li>
+            <li>Podcast</li>
+         </ul>
+      </div>
+      <div class="acc">
+         <h4>Company</h4> <br>
+         <ul type="none">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>Legal</li>
+         </ul>
+      </div>
+      <div class="ae">
+         <h4>Contact Us</h4>
+         <ul type="none">
+            <li>sanketyelaye11@gmail.com</li>
+         </ul>
+      </div>
+   </div>
+   <div class="last">
+      <p>&#9925;<br>
+         &#169;Abstract &nbsp;2023
+         <br>Abstract Stdio Design,Inc. <br> All rights reserved
+      </p>
+   </div>
+   </div>
+   </div>
+</body>
+
+</html>
